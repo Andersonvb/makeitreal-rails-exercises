@@ -1,0 +1,61 @@
+.main-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.subtitle {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.list-container {
+  display: flex;
+  gap: 35px;
+}
+
+.card {
+  padding: 5px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 3px .5px gray;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.card p {
+  margin: 10px 0;
+}
+
+.btn {
+  max-width: 140px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: slateblue;
+}
+
+.card-row {
+  flex-direction: row;
+}

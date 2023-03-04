@@ -1,0 +1,14 @@
+@import "~bootstrap/scss/bootstrap";
+@import "rooms";
+
+h1 {
+  color: #303030;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 34px;
+  margin-bottom: 20px;
+
+  @media (min-width: $grid-breakpoints(sm)) {
+    font-size: 42px;
+    margin-bottom: 30px;
+  }
+}

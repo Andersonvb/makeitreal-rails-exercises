@@ -1,0 +1,21 @@
+<%= link_to "<span>Crear Actor</span>".html_safe, new_actor_path %>
+
+<ul>
+
+  <% @actors.each do |actor| %>
+      <li>
+        <article>
+          <img src="<%= actor.image_url %>" alt="Actor photo">
+          <h2><%= actor.name %></h2>
+          <p><%= actor.bio %></p>
+          <span><%= actor.birth_date %></span>
+          <span><%= actor.birth_place %></span>
+          <% if !actor.alive %>
+            <p>Death date: <%= actor.death_date %></p>
+            <p>Death place: <%= actor.death_place %></p>
+          <% end %>
+        </article>
+      </li>
+  <% end %>
+
+</ul>

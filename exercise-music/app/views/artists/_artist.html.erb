@@ -1,0 +1,28 @@
+<%= link_to "Volver a Inicio", artists_path, class: 'btn' %>
+
+<br>
+
+<article class='card'>
+  <h1 class='title' ><%= @artist.name %></h1>
+  <img src="<%= @artist.image_url %>" alt="Artist image">
+</article>
+
+<br>
+
+<h2 class='subtitle' >Albums</h2>
+
+<br>
+
+<ul class='list-container' >
+  <% @artist.albums.each do |album| %>
+
+    <li class='card'>
+      <img src="<%= album.image_url %>" alt="Album image" >
+      <h2><%= album.name %></h2>
+      <p>Released at <%= album.released_at %><p>
+      <%= link_to 'Ver album', album_path(album), class: 'btn'%>
+    </li>
+
+  <% end %>
+</ul>
+

@@ -1,0 +1,39 @@
+<%= form_for @actor do |f| %>
+  <div>
+    <%= f.text_field :name, placeholder: 'Name' %>
+  </div>
+
+  <div>
+    <%= f.text_area :bio, placeholder: 'Bio' %>
+  </div>
+
+  <div>
+    <%= f.label :birth_date, 'Birth date' %>
+    <%= f.date_field :birth_date %>
+  </div>
+
+  <div>
+    <%= f.text_field :birth_place, placeholder: 'Birth place' %>
+  </div>
+
+  <div>
+    <%= f.text_field :image_url, placeholder: 'image_url' %>
+  </div>
+
+  <div>
+    <%= f.check_box :alive %>
+  </div>
+
+  <div>
+    <%= f.label :death_date, 'Death date' %>
+    <%= f.date_field :death_date %>
+  </div>
+
+  <div>
+    <%= f.text_field :death_place, placeholder: 'Death place' %>
+  </div>
+
+  <div>
+    <%= f.submit %>
+  </div>
+<% end %>

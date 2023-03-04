@@ -1,0 +1,23 @@
+<%= link_to "Volver a Inicio", artists_path, class: 'btn' %>
+
+<br>
+
+<article class='card'>
+  <img src="<%= @album.image_url %>" >
+  <h2><%= @album.name %></h2>
+</article>
+
+<br>
+
+<h2 class='title' >Songs</h2>
+
+<br>
+
+<ul class='list-contaier'>
+  <% @album.songs.each do |song| %>
+    <li class='card card-row' >
+      <h2><%= song.name %></h2>
+      <a href="<%= song.preview_url %> " class='btn'>Escuchar</a>
+    </li>
+  <% end %>
+</ul>
